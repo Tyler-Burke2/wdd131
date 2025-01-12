@@ -1,15 +1,11 @@
-/* mission.css */
-
-/* General reset */
 body, h1, h2, p, ol, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -20,7 +16,6 @@ body {
     min-height: 100vh;
 }
 
-/* Content container */
 .content {
     max-width: 800px;
     background-color: #fff;
@@ -29,7 +24,6 @@ body {
     overflow: hidden;
 }
 
-/* Header styles */
 header.title {
     background-color: #003366;
     color: #fff;
@@ -38,19 +32,19 @@ header.title {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
 header h2 {
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 400;
     margin-top: 0;
 }
 
-/* Main content */
 main {
     padding: 20px;
+    font-size: 20px;
 }
 
 main p {
@@ -63,7 +57,6 @@ main em {
     color: #555;
 }
 
-/* Ordered list styles */
 ol.does-list {
     margin: 20px 0;
     padding-left: 40px;
@@ -75,7 +68,6 @@ ol.does-list li {
     line-height: 1.5;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     background-color: #f5f5f5;
@@ -86,10 +78,5 @@ footer {
 footer .logo {
     max-width: 150px;
     margin-top: 10px;
-    filter: grayscale(100%);
     transition: filter 0.3s ease;
-}
-
-footer .logo:hover {
-    filter: grayscale(0%);
 }
