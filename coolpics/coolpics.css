@@ -1,12 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
 :root {
---primary-color: #52489c;
---secondary-color: #59c3c3;
---accent-color: #f45b69;
---text-dark: #333;
---text-light: #ebebeb;
---primary-font: Arial, Helvetica,sans-serif;
---secondary-font: Mooli, san-serif;
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, san-serif;
 }
 
-/* YOU AERE ON STEP 3!!!
+header {
+    background-color: #52489c;
+    color: #ebebeb;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    display: block; 
+    color: #ebebeb;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+main {
+    background-color: #ebebeb;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+}
+
+figure {
+    border: solid white 15px;
+    box-shadow: 10px 10px 5px;
+}
+
+footer {
+    background-color: #52489c;
+}
+
+@media screen and (min-width: 700px) {
+    nav a {
+        font-size: 1px;
+        color:#52489c;
+        padding: 0px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h2 {
+        font-size: 0px;
+        color: #52489c;
+        padding: 0px;
+    }
+
+    nav {
+        display: flex; /* Ensure nav is a flex container */
+        flex-direction: row; /* Make the links horizontal */
+        align-items: center; /* Vertically align links */
+        justify-content: center; /* Center the links horizontally on the page */
+        gap: 40px; /* Add spacing between links */
+    }
+
+    nav a {
+        font-size: 20px;
+        color: #ebebeb;
+        padding: 10px;
+    }
+}
+
+
+
