@@ -5,7 +5,6 @@ const viewerImg = viewer.querySelector("img");
 const closeViewer = document.querySelector(".close-viewer");
 const galleryImages = document.querySelectorAll(".gallery img");
 
-// Apply necessary CSS changes
 document.addEventListener("DOMContentLoaded", () => {
   viewer.style.position = "fixed";
   viewer.style.top = "0";
@@ -30,13 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
   closeViewer.style.cursor = "pointer";
 });
 
-// Toggle menu
 function toggleMenu() {
   navMenu.classList.toggle("hide");
 }
 menuButton.addEventListener("click", toggleMenu);
 
-// Open image in viewer
 function openViewer(event) {
   viewerImg.src = event.target.src.replace("-sm", "-full"); // Ensure full image loads
   viewer.style.display = "flex";
@@ -44,7 +41,6 @@ function openViewer(event) {
 
 galleryImages.forEach(img => img.addEventListener("click", openViewer));
 
-// Close viewer
 function closeImageViewer() {
   viewer.style.display = "none";
 }
