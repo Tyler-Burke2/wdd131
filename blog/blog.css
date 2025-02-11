@@ -1,3 +1,5 @@
+/* PAGE STRUCTURE BASICS */
+
 h1 {
     font-size: 2em;
     color: #333;
@@ -6,7 +8,7 @@ h1 {
 }
 
 nav {
-    text-align: center;
+    text-align: right;
     border-style: solid;
     border-color: gold;
     border-left-color: white;
@@ -23,7 +25,7 @@ main {
     padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 h2 {
@@ -37,6 +39,8 @@ h2 {
     grid-column: 2/4;
     text-align: center;
 }
+
+/* BOOK 1 STYLE */
 
 .description1 {
     padding: 20px;
@@ -76,6 +80,8 @@ h2 {
     display: inline-block;
     width: 75px;
 }
+
+/* BOOK 2 STYLE */
 
 .book2info {
     grid-column: 1/2;
