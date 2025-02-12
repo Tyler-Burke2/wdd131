@@ -54,3 +54,14 @@ let shortFruit = fruit.filter(function(item){
 // let shortFruit = fruit.filter((item)=> item.length < 6);
 
 console.log(shortFruit);
+
+// ------------------------
+
+const myArray = [12, 34, 21, 54];
+
+let luckyNumber = 21;
+
+let luckyIndex = myArray.indexOf(luckyNumber);
+
+console.log(luckyIndex); //This would output 2 in the console log//
+

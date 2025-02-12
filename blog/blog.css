@@ -60,6 +60,11 @@ h2 {
 
 .book1info p {
     margin-right: 20px;
+    line-height: 10px;
+}
+
+.date {
+    font-size: larger;
 }
 
 .dropdown {
@@ -96,6 +101,7 @@ h2 {
 
 .book2info p {
     margin-right: 20px;
+    line-height: 10px;
 }
 
 .dropdown2 {
