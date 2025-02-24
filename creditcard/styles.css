@@ -6,6 +6,8 @@ form {
 #cardFront, #cardBack {
     background-color: lightgray;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px;
 }
 
 #cardFront {
@@ -19,12 +21,12 @@ form {
 #cardBack {
     grid-column: 2/4;
     grid-row: 2/4;
-
 }
 
-#cvc {
-    grid-column: ;
-    grid-row: ;
+.bar {
+    width: 100%;
+    height: 35px;
+    background-color: darkgray;
 }
 
 button {
