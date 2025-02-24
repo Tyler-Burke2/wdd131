@@ -10,17 +10,37 @@ form {
     box-shadow: 4px 4px 8px;
 }
 
+#cardBack {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+/* ------------------------------------ */
+
 #cardFront {
     grid-column: 1/3;
     grid-row: 1/3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     z-index: 1;
 }
 
-#cardBack {
-    grid-column: 2/4;
-    grid-row: 2/4;
+#cardNumberConatiner {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    grid-column:
+}
+
+/* ------------------------------------ */
+
+#cvc {
+    margin-top: 100px;
+    text-align: right;
 }
 
 .bar {
@@ -30,17 +50,9 @@ form {
     background-color: darkgray;
 }
 
+/* --------------------------------------- */
+
 button {
     grid-column: 3/4;
     grid-row: 4/5;
-}
-
-#cardNumberConatiner {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-#cvc {
-    margin-top: 100px;
-    text-align: right;
 }
