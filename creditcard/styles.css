@@ -26,6 +26,7 @@ form {
 .bar {
     width: 100%;
     height: 35px;
+    margin-top: 30px;
     background-color: darkgray;
 }
 
@@ -37,4 +38,9 @@ button {
 #cardNumberConatiner {
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+#cvc {
+    margin-top: 100px;
+    text-align: right;
 }
