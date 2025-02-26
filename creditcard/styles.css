@@ -8,6 +8,7 @@ form {
     height: 300px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #cardBack {
@@ -27,13 +28,7 @@ form {
 
 #cardNumberConatiner {
     grid-column: 1/2;
-    grid-row: 2/3;
-    
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace;
-    grid-column:
+    grid-row: 2/3; 
 }
 
 /* ------------------------------------ */
@@ -55,4 +50,5 @@ p {
 button {
     grid-column: 3/4;
     grid-row: 4/5;
+    margin-top: 50px;
 }
