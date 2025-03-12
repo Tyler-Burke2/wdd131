@@ -16,18 +16,18 @@ header {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
     font-size: 24px;
 }
 
 .logo img {
-    width: 100px; /* Adjust this value to make the logo smaller or larger */
+    width: 150px; /* Adjust this value to make the logo smaller or larger */
     height: auto; /* Keep the aspect ratio of the image */
 }
 
 .logo h1 {
-    font-size: 20px; /* Adjust the font size of the text next to the logo */
+    font-size: 90px; /* Adjust the font size of the text next to the logo */
 }
 
 
@@ -108,4 +108,39 @@ footer {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 60px; /* Adjust padding for full screen */
+    }
+
+    .logo img {
+        width: 80px; /* Make the logo bigger on large screens */
+    }
+
+    .logo h1 {
+        font-size: 48px; /* Make the title bigger on large screens */
+    }
+
+    .search-bar {
+        width: 40%; /* Adjust the search bar width for larger screens */
+        max-width: 500px;
+    }
+
+    .recipe-card {
+        max-width: 400px; /* Make recipe cards larger */
+        margin: 20px;
+    }
+
+    footer {
+        font-size: 16px; /* Adjust footer font size */
+    }
+
+    .social-icons img {
+        width: 40px; /* Increase icon size on larger screens */
+        height: 40px;
+    }
 }
