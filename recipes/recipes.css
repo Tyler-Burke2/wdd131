@@ -95,7 +95,8 @@ h2 {
 footer {
     margin-top: 20px;
     font-size: 14px;
-    color: #777;
+    color: #0077cc;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .social-icons {
@@ -110,37 +111,80 @@ footer {
     height: 30px;
 }
 
+.description {
+    display: none; /* Hide description initially */
+    margin-top: 10px; /* Add space between the stars and description */
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 @media (min-width: 1024px) {
     header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 30px 60px; /* Adjust padding for full screen */
+        display: flex;
+        flex-direction: column; /* Keep it as a column layout for now */
+        justify-content: center;
+        align-items: center; /* Center logo and title */
+        padding: 30px 60px;
+    }
+
+    .logo {
+        gap: 15px;
+        font-size: 36px; /* Increase font size for larger screens */
     }
 
     .logo img {
-        width: 80px; /* Make the logo bigger on large screens */
-    }
-
-    .logo h1 {
-        font-size: 48px; /* Make the title bigger on large screens */
+        width: 150px; /* Adjust the logo size */
+        height: auto;
     }
 
     .search-bar {
-        width: 40%; /* Adjust the search bar width for larger screens */
-        max-width: 500px;
+        width: 100%; /* Make the search bar span the full width */
+        max-width: none; /* Remove the max-width to let it expand */
+        margin-top: 20px;
     }
 
     .recipe-card {
-        max-width: 400px; /* Make recipe cards larger */
-        margin: 20px;
+        display: flex; /* Use flexbox to align image and text side by side */
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 900px; /* Set a max width for larger cards */
+        margin: 20px auto;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    footer {
-        font-size: 16px; /* Adjust footer font size */
+    .recipe-card img {
+        width: 50%; /* Make the image take up half the width */
+        height: auto;
     }
 
-    .social-icons img {
-        width: 40px; /* Increase icon size on larger screens */
-        height: 40px;
+    .recipe-info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .category {
+        display: inline-block;
+        background: #f4f4f4;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px; /* Increase the recipe title size */
+        color: #0077cc;
+    }
+
+    .rating {
+        font-size: 20px; /* Increase the rating font size */
+        color: #ffcc00;
+    }
+
+    .description {
+        display: block; /* Show description when screen is fullscreen */
     }
 }
