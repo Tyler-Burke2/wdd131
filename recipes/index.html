@@ -1,42 +1,39 @@
-<!-- YOU ARE PROBABLY ON STEP 03 -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-    <link rel="stylesheet" href="recipes.css" />
-    <script defer src="recipes.js"></script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
     <header>
-      <img src="recipe-book.png" alt="logo" />
-      <h1>Recipe Book</h1>
+        <div class="logo">
+            <img src="recipe-book.png" alt="Recipe Book Logo">
+            <h1>RecipeBook</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Find a recipe">
+            <button>🔍</button>
+        </div>
     </header>
     <main>
-      <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-        <span aria-hidden="true" class="icon-star-empty">☆</span>
-      </span>
+        <div class="recipe-card">
+            <img src="apple-crisp.jpg" alt="Apple Crisp">
+            <div class="recipe-info">
+                <span class="category">dessert</span>
+                <h2>Apple Crisp</h2>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+            </div>
+        </div>
     </main>
     <footer>
-      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons"
-        >Recipe icons created by Freepik - Flaticon</a
-      >
-      <div class="social">
-        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a href="#"
-          ><img src="images/instagram_icon.svg" alt="instagram icon"
-        /></a>
-        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
-        <a href="#"
-          ><img src="images/pinterest_icon.svg" alt="pinterest icon"
-        /></a>
-      </div>
+        <div class="social-icons">
+            <a href="#"><img src="youtube_icon.svg" alt="YouTube"></a>
+            <a href="#"><img src="instagram_icon.svg" alt="Instagram"></a>
+            <a href="#"><img src="pinterest_icon.svg" alt="Pinterest"></a>
+        </div>
+        <p>Recipe icons created by Freepik - Flaticon</p>
     </footer>
-  </body>
+</body>
 </html>
