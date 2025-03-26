@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Boldonse&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #4936b6;
+  --secondary-color: #16bac5;
+  --accent1-color: #221d23;
+  --accent2-color: #c6c6cc;
+
+  --heading-font: "Boldonse";
+  --paragraph-font: "Roboto Condensed";
+
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+/* ---------------------------------------- */
+
+/* ==-- HEADER --== */
+
 .logo {
     width: 10%;
+}
+
+/* ==-- MAIN --== */
+
+.resume_image {
+    width: 50%
+}
+
+/* ==-- FOOTER --== */
+
+.footer_image {
+    width: 10%
 }
