@@ -1,23 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Boldonse&display=swap');
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Boldonse&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Root Variables */
 :root {
   --primary-color: #4936b6;
   --secondary-color: #16bac5;
   --accent1-color: #221d23;
   --accent2-color: #c6c6cc;
-
   --heading-font: "Boldonse";
   --paragraph-font: "Roboto Condensed";
-
-  --headline-color-on-white: var(
-    --primary-color
-  ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: var(
-    --primary-color
-  ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
   --paragraph-background-color: var(--primary-color);
   --nav-link-color: var(--primary-color);
   --nav-background-color: var(--secondary-color);
@@ -25,30 +20,112 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
-/* ---------------------------------------- */
-
-/* ==-- HEADER --== */
-
-.logo {
-  width: 10%;
+/* Global Styles */
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent2-color);
+  color: var(--paragraph-color-on-white);
+  text-align: center;
 }
 
-/* ==-- MAIN --== */
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--nav-background-color);
+  padding: 1rem;
+}
 
-.code_image {
- width: 50%;
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+  border-radius: 5px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
 }
 
 .main_div {
-  width: 300px;
-  height: 200px; /* Fixed height */
-  border: 2px solid #333;
-  overflow-y: auto; /* Enables vertical scrolling */
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: auto;
+  height: 500px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ==-- FOOTER --== */
+
+.code_image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 
 .footer_image {
-  width: 10%
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main_div {
+    height: 400px; /* Adjust height for smaller screens */
+    padding: 1rem;
+    width: 90%; /* Make it more flexible */
+  }
+
+  .code_image {
+    width: 100%;
+    max-width: 300px; /* Prevent overly large images */
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
 }
