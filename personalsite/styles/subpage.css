@@ -121,14 +121,14 @@ footer {
   }
 
   .main_div {
-    height: 400px; /* Adjust height for smaller screens */
+    height: 400px; 
     padding: 1rem;
-    width: 90%; /* Make it more flexible */
+    width: 90%; 
   }
 
   .code_image {
     width: 100%;
-    max-width: 300px; /* Prevent overly large images */
+    max-width: 300px; 
   }
 
   footer {
@@ -139,13 +139,13 @@ footer {
 
 @media screen and (min-width: 1200px) {
   body, html {
-      justify-content: center; /* Keeps it horizontally centered */
-      align-items: center;     /* Keeps it vertically centered */
+      justify-content: center; 
+      align-items: center;    
   }
 
   .main_div {
-      width: 60%; /* Smaller width when the screen is wide (fullscreen or large desktop) */
-      max-width: 800px; /* Increase the max width for larger screens */
-      height: 400px;    /* Optionally change height for larger screens */
+      width: 60%; 
+      max-width: 800px; 
+      height: 400px;
   }
 }

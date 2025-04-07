@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const resumeDiv = document.querySelector(".resume_div");
     const resumeImage = document.querySelector(".resume_image");
     
-    // Create a div for filtered content
+    // CREATES DIV HERE \/\/\/
     const filteredContent = document.createElement("div");
     filteredContent.classList.add("filtered_content");
     resumeDiv.appendChild(filteredContent);
 
-    // Object holding different resume sections
+    // HOLDS DIFFERENT RESUME PORTIONS \/\/\/
     const resumeSections = {
         "Objective": "This is my objective statement.",
         "Education": "Here is my educational background.",
